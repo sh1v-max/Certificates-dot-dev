@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitchen Safety Guardian</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🍳 Precision Kitchen - Safety Guardian Report 🛡️</h1>
+        
+        <div class="panel">
+            <h2><span class="emoji">🌡️</span>Temperature Controller</h2>
+            <div class="call">setOvenTemperature(180)</div>
+            <div class="result"><span class="icon">✅</span><span id="temperature1"></span></div>
+            
+            <div class="call">setOvenTemperature(300)</div>
+            <div class="error"><span class="icon">❌</span><span id="temperature2"></span></div>
+            
+            <div class="call">setOvenTemperature("hot")</div>
+            <div class="error"><span class="icon">❌</span><span id="temperature3"></span></div>
+        </div>
+        
+        <div class="panel">
+            <h2><span class="emoji">🥕</span>Ingredient Inspector</h2>
+            <div class="call">checkIngredientFreshness("carrot", 7)</div>
+            <div class="result"><span class="icon">✅</span><span id="ingredient1"></span></div>
+            
+            <div class="call">checkIngredientFreshness("", 5)</div>
+            <div class="error"><span class="icon">❌</span><span id="ingredient2"></span></div>
+            
+            <div class="call">checkIngredientFreshness("potato", 3.5)</div>
+            <div class="error"><span class="icon">❌</span><span id="ingredient3"></span></div>
+        </div>
+        
+        <div class="panel">
+            <h2><span class="emoji">📜</span>Menu Planner</h2>
+            <div class="call">addDishToMenu("Kung Pao Chicken", 38)</div>
+            <div class="result"><span class="icon">✅</span><span id="menu1"></span></div>
+            
+            <div class="call">addDishToMenu("Mapo Tofu", -5)</div>
+            <div class="error"><span class="icon">❌</span><span id="menu2"></span></div>
+            
+            <div class="call">addDishToMenu("Kung Pao Chicken", 40)</div>
+            <div class="error"><span class="icon">❌</span><span id="menu3"></span></div>
+        </div>
+    </div>
+    <script type="module">
+      import  {} from "./src/main.js"
+    </script>
+    <!--replace with main.js-->
+</body>
+
+</html>

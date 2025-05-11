@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0c15;
+  --primary: #f041ff;
+  --secondary: #f7df1f;
+  --text: white;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.top-nav {
+  @apply flex items-center py-6 text-sm flex-wrap justify-center p-2;
+}
+
+#nav li {
+  @apply px-4 whitespace-nowrap mb-7;
+}
+
+#nav a {
+  background: var(--primary);
+  @apply px-4 py-2 rounded;
+}
+
+#app {
+  @apply text-center mx-auto max-w-full;
+}
+
+.home-nav {
+  @apply flex flex-col justify-center list-none h-screen w-96 max-w-full mx-auto;
+}
+.home-nav li,
+.home-nav a {
+  @apply block text-center;
+}
+.exercise-title {
+  @apply text-3xl font-bold mb-6 text-center;
+}
+
+.article-wrapper {
+  @apply flex justify-center flex-1;
+}
+
+.article-container {
+  @apply w-[400px];
+}
+
+.article-container ul {
+  @apply grid grid-cols-1 gap-6;
+}
+
+.article-container ul li {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+.article-container ul li h2 {
+  color: var(--bg);
+  @apply text-xl font-semibold mb-2;
+}
+
+.article-container ul li p {
+  @apply text-gray-700;
+}
+
+.score-container {
+  @apply text-3xl text-center p-8;
+}
+.add-function-wrapper {
+  @apply text-center;
+}
+
+.controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controls button:hover {
+  background-color: #1c86ee;
+}
+
+.logs {
+  margin-top: 20px;
+}
+
+#log-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#log-list li {
+  margin: 5px 0;
+}

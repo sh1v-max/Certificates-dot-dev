@@ -1,0 +1,7 @@
+- The `javascript` variable is defined with the value `king`
+- Attempting to change the `javascript` variable throws an error
+- You've logged the result of `javascript.includes('hard')` to the console
+- The variable age is declared as a number and uses the `let` keyword so that it can be reassigned 
+- The variable `isPreppingForExam` is a boolean `true`
+- The variable `isOlderThan8` is correctly assigned
+- The variable `thisVarHasNoValue` is undefined

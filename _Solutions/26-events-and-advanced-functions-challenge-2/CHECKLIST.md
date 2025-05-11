@@ -1,0 +1,10 @@
+- Requirement 1 - When the mouse hovers on the button, the color changes to darker blue.
+- Requirement 1 - When the mouse leaves the button, the color changes back to the original color.
+- Requirement 1 - When the user types in the input, the text of the element with the id `nameDisplay` updates in real-time.
+- Requirement 1 - When the user clicks the button, an alert message shows `Hello, <name>!` where `<name>` is the value of the input with the id `nameInput`.
+- Requirement 2 - The `createDiscount(percentage)` function returns a function that applies the discount to a cart item.
+- Requirement 2 - The `discountFunction` is set to the closure function created by `createDiscount`.
+- Requirement 2 - The `discountedCart` constant is an IIFE that applies the discount to the cart array.
+- Requirement 2 - The `displayCart(cart, callback)` function calls the callback with the cart array.
+- Requirement 2 - The `displayCart` function is triggered with `discountedCart` and a callback that updates the DOM element with the id `cart`.
+- "Requirement 2 - The cart items should be displayed with the discounted prices: (apple: $0.80, banana: $0.40, cherry: $1.60)."

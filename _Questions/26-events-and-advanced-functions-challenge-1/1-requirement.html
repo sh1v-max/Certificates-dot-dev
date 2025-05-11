@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Handling and Dom Manipulation</title>
+  <script type="module" src="/index.js"></script>
+  <style>
+    body{
+      background:#0B0C15;
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="nav" class="top-nav"></ul>
+  <div id="app">
+    <h1 class="exercise-title">1- Event Handling and Dom Manipulation</h1>
+    <p>My name is: <span id="nameDisplay"></span></p>
+    <input type="text" id="nameInput" class="input" placeholder="Enter your name" autocomplete="off" />
+    <button id="button" class="button">Greet me!</button>
+  </div>
+  <script type="module">
+    import { main } from './src/1-requirement.js'
+    main()
+  </script>
+</body>
+
+</html>

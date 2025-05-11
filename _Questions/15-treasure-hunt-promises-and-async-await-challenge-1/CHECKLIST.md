@@ -1,0 +1,3 @@
+- Asynchronous treasure finding implemented
+- Sequential hunt with individual rendering
+- Parallel hunt with bulk rendering

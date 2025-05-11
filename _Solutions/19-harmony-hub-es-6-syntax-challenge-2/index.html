@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmony Hub</title>
+</head>
+
+<body>
+    <div class="daw-container">
+        <div class="header">
+            <h1>Harmony Hub</h1>
+        </div>
+        
+        <div class="track-info">
+            <h2><img src="https://raw.githubusercontent.com/JavaScript-Certification/images/refs/heads/main/images/training/7-1/track.png" alt="Track">Current Track</h2>
+            <div id="trackMetadata">
+            </div>
+        </div>
+        
+        <div class="playlist">
+            <h2><img src="https://raw.githubusercontent.com/JavaScript-Certification/images/refs/heads/main/images/training/7-1/playlist.png" alt="Playlist">Playlist</h2>
+            <ul class="playlist-tracks" id="playlistTracks">
+            </ul>
+        </div>
+        
+        <div class="effects">
+            <h2><img src="https://raw.githubusercontent.com/JavaScript-Certification/images/refs/heads/main/images/training/7-1/effects.png" alt="Effects">Audio Effects</h2>
+            <div>
+                <label for="reverb">Reverb:</label>
+                <input type="range" id="reverb" class="effect-slider" min="0" max="1" step="0.1">
+            </div>
+            <div>
+                <label for="delay">Delay:</label>
+                <input type="range" id="delay" class="effect-slider" min="0" max="1" step="0.1">
+            </div>
+            <div>
+                <label for="chorus">Chorus:</label>
+                <input type="range" id="chorus" class="effect-slider" min="0" max="1" step="0.1">
+            </div>
+        </div>
+        
+        <div class="mixer">
+            <h2><img src="https://raw.githubusercontent.com/JavaScript-Certification/images/refs/heads/main/images/training/7-1/mixer.png" alt="Mixer">Mixer</h2>
+            <div>
+                <label for="volume">Volume:</label>
+                <input type="range" id="volume" class="mixer-slider" min="0" max="1" step="0.1">
+            </div>
+            <div>
+                <label for="pan">Pan:</label>
+                <input type="range" id="pan" class="mixer-slider" min="-1" max="1" step="0.1">
+            </div>
+        </div>
+        
+        <div class="tuner">
+            <h2><img src="https://raw.githubusercontent.com/JavaScript-Certification/images/refs/heads/main/images/training/7-1/tuner.png" alt="Tuner">Instrument Tuner</h2>
+            <div class="tuner-display">A4: <span id="tuner"></span>Hz</div>
+        </div>
+    </div>
+    <script type="module">
+      import  {} from "./src/main.js"
+    </script>
+    <!--replace with main.js-->
+</body>
+
+</html>

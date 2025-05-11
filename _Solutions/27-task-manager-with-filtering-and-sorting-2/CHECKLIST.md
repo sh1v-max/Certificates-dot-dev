@@ -1,0 +1,4 @@
+- A user can add tasks with a priority level (Low, Medium, High).
+- A user can delete tasks.
+- A user can filter tasks by priority.
+- A user can sort tasks by priority or creation time.

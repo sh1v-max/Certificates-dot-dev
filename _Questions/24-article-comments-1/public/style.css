@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply w-screen h-screen flex flex-col justify-center items-center;
+}
+
+#app {
+  @apply w-[420px] mx-auto bg-white rounded-lg shadow-md max-h-[600px];
+}
+
+.title {
+  @apply rounded-tl-xl rounded-tr-xl px-2 text-2xl font-bold text-center h-[64px] leading-[64px] bg-blue-500 text-white;
+}
+
+.wrapper {
+  @apply bg-white rounded-lg shadow-md overflow-y-auto mb-4 h-[536px];
+}
+
+
+.detail-container img {
+  @apply w-full h-64 object-cover;
+}
+
+.detail-container p {
+  @apply text-base text-gray-700 p-2 indent-2;
+}
+
+.comments-title {
+  @apply text-xl font-bold mb-4 p-2;
+}
+.comments-container {
+  @apply p-2
+}
+
+.comments-container > div {
+  @apply flex items-start space-x-4;
+}
+
+.comments-container > div img {
+  @apply w-12 h-12 rounded-full;
+}
+
+.comments-container > div > div h3 {
+  @apply text-lg font-semibold;
+}
+
+.comments-container > div > div p {
+  @apply text-gray-600;
+}
+
+#addCommentForm {
+  @apply p-2;
+}
+
+#addCommentForm > div {
+  @apply mb-2;
+}
+
+#addCommentForm > div label {
+  @apply block text-sm font-semibold;
+}
+
+#addCommentForm > div input, #addCommentForm > div textarea {
+  @apply w-full p-2 border border-gray-300 rounded-md;
+}
+
+#addCommentForm > button {
+  @apply w-full p-2 bg-blue-500 text-white rounded-md;
+}
+
+#addCommentForm > button:hover {
+  @apply bg-blue-600;
+}
+
+
+

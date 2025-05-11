@@ -1,0 +1,9 @@
+- Ensure the "Connect to Major Tom" button initiates a connection attempt and logs "Attempting to connect to Major Tom...".
+- Verify that a successful connection logs "Connection established with Major Tom.".
+- Verify that a failed connection logs "Connection failed!".
+- Ensure the "Initiate Launch" button logs "Connection to Major Tom is required." if not connected.
+- Verify that the "Initiate Launch" button logs "Initiating launch sequence..." when connected.
+- Check that the countdown from 10 to 1 is logged correctly with "T-minus X".
+- Verify that "Launch Successful! Major Tom is in orbit." is logged after the countdown completes.
+- Ensure the "Abort Mission" button logs "Mission aborted! Major Tom is safe." if clicked during the countdown.
+- Verify that the "Abort Mission" button logs "No active mission to abort." if no countdown is active.

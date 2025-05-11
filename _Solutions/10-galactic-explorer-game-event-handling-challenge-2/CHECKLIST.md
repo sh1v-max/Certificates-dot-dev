@@ -1,0 +1,4 @@
+- The rocket flies from the bottom to the top on the screen when you click "launch"
+- When typing in the command input, each newly typed character logged to the console
+- The star follows the cursor around the page
+- When double clicking the hyperdrive button, the hyperdrive background appears on the page

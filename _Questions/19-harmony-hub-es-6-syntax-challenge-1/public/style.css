@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?music,studio');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.daw-container {
+    background-color: rgba(42, 42, 42, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #4a90e2;
+    margin: 0;
+}
+
+.track-info, .playlist, .effects, .mixer, .tuner {
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #4a90e2;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+h2 img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.track-title {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.track-artist {
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.track-genres {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.playlist-tracks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.playlist-tracks li {
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
+}
+
+.effect-slider, .mixer-slider {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.tuner-display {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #4a90e2;
+}

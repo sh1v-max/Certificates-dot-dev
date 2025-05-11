@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager with Filtering and Sorting</title>
+    <style>
+      body {
+        background: #0b0c15;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1 class="exercise-title">Task Manager with Filtering and Sorting</h1>
+      <div class="add-function-wrapper">
+        <input type="text" id="task-input" placeholder="Enter a new task" />
+        <select id="priority-select">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="add-task-btn">Add Task</button>
+      </div>
+      <div class="filter-sort-wrapper">
+        <label for="filter-select">Filter by Priority:</label>
+        <select id="filter-select">
+          <option value="all">All</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <label for="sort-select">Sort by:</label>
+        <select id="sort-select">
+          <option value="priority">Priority</option>
+          <option value="time">Creation Time</option>
+        </select>
+      </div>
+      <div class="article-wrapper">
+        <div class="article-container">
+          <ul id="task-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import "./src/style.css";
+      import { main } from "./src/main.js";
+      main();
+    </script>
+  </body>
+</html>

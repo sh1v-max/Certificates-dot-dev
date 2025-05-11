@@ -1,0 +1,2 @@
+- The syntax error has been resolved
+- The answer to 2 + 5 (7) is logged to the console
