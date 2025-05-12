@@ -1,4 +1,4 @@
-Instructions for each chapter have been provided in the `README.md` file.
+- Instructions for all Problems have been provided in the corresponding chapter's `README.md` file.
 
 
 # Resources:
