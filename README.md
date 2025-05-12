@@ -14,5 +14,5 @@ Please note that while the training is free during this period, the **JavaScript
 
 To take advantage of this free training, visit the [Certificates.dev Free Weekend](https://certificates.dev/javascript/free-weekend) page and sign up. This is an excellent opportunity to enhance your JavaScript skills through interactive lessons and hands-on exercises.
 
-Visit [Certificate.dev](certificate.dev)
+Visit [Certificate.dev](https://certificates.dev/)
 
