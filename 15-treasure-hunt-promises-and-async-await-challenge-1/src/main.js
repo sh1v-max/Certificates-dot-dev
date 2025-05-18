@@ -24,7 +24,7 @@ function renderTreasure (name, container) {
 // 1. Treasure Finder
 
 export function findTreasure (treasureName, delay) {
-  return new promise((resolve) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       resolve({
         'name': treasureName,
@@ -37,7 +37,13 @@ export function findTreasure (treasureName, delay) {
 // 2. Sequential Treasure Hunt
 
 export async function sequentialHunt (treasures) {
-
+  const foundTreasures = []
+  for (const treasure of treasures) {
+    const foundTreasure = await findTreasure(treasure.name, treasure.delay)
+    renderTreasure(foundTreasure.name, sequentialContainer)
+    foundTreasures.push(foundTreasure)
+  }
+  return foundTreasures
 }
 
 sequentialHunt(treasures)
