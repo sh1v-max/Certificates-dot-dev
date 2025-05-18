@@ -37,13 +37,13 @@ export function findTreasure (treasureName, delay) {
 // 2. Sequential Treasure Hunt
 
 export async function sequentialHunt (treasures) {
-  const foundTreasures = []
+  const foundTress = []
   for (const treasure of treasures) {
-    const foundTreasure = await findTreasure(treasure.name, treasure.delay)
-    renderTreasure(foundTreasure.name, sequentialContainer)
-    foundTreasures.push(foundTreasure)
+    const foundTres = await findTreasure(treasure.name, treasure.delay)
+    renderTreasure(foundTres.name, sequentialContainer)
+    foundTress.push(foundTres)
   }
-  return foundTreasures
+  return foundTress
 }
 
 sequentialHunt(treasures)
@@ -51,11 +51,15 @@ sequentialHunt(treasures)
 // 3. Parallel Treasure Hunt
 
 export async function parallelHunt (treasures) {
-
+  const foundTress = await Promise.all(treasures.map(async (treasure) => {
+    const foundTres = await findTreasure(treasure.name, treasure.delay)
+    return foundTres
+  }))
+  return foundTress
 }
 
-parallelHunt(treasures).then((foundTreasures) => {
-  foundTreasures.forEach((treasure) => {
+parallelHunt(treasures).then((foundTress) => {
+  foundTress.forEach((treasure) => {
     renderTreasure(treasure.name, parallelContainer)
   })
 })
