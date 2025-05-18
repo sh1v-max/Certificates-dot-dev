@@ -4,13 +4,18 @@
 
 // define the function so that it fetches the data
 export async function fetchAllProducts () {
-
+  const res = await fetch('https://dummyjson.com/products')
+  return await res.json()
 }
 
 // call the function
+const data = await fetchAllProducts()
+// console.log(data.products)
 
 // then render the results to the screen
-
+const renderedProducts = data.products.map((product) => {
+  return renderProduct(product)
+})
 
 // 2. Fetch Single Product Details
 
