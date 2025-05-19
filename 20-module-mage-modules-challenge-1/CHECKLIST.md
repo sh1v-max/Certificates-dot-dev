@@ -1,0 +1,1 @@
+- The arcane academy displayed as expected

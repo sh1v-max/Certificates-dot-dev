@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module Mage</title>
+</head>
+
+<body>
+  <div id="app" class="container">
+      <h1 class="title">Arcane Academy</h1>
+      
+      <div class="card">
+          <h2 class="card-title text-blue">Mystical Library</h2>
+          <p class="card-content">Ancient Incantations:</p>
+          <div class="flex">
+              <div class="badge badge-red" id="fireball"></div>
+              <div class="badge badge-blue" id="frostNova"></div>
+          </div>
+      </div>
+
+      <div class="card">
+          <h2 class="card-title text-green">Artifact Vault</h2>
+          <p class="card-content">Legendary Relic:</p>
+          <div class="badge badge-yellow" id="wizardStaff">{{ wizardStaff }}</div>
+      </div>
+
+      <div class="card">
+          <h2 class="card-title text-red">Sorcerer's Circle</h2>
+          <p class="card-content">Archmage Profile:</p>
+          <div class="badge badge-purple">
+              <pre class="text-sm" id="wizard"></pre>
+          </div>
+      </div>
+
+      <div class="card">
+          <h2 class="card-title text-yellow">Grimoire Collection</h2>
+          <div>
+              <p class="card-content">Tome of Flames:</p>
+              <div class="badge badge-red" id="inferno"></div>
+          </div>
+          <div>
+              <p class="card-content">Codex of Frost:</p>
+              <div class="badge badge-blue" id="blizzard"></div>
+          </div>
+      </div>
+
+      <div class="card">
+          <h2 class="card-title text-indigo">Arcane Fusion</h2>
+          <p class="card-content">Mystical Synergy:</p>
+          <div class="flex">
+              <div class="badge badge-red" id="magicFireball"></div>
+              <div class="badge badge-purple" id="magicRobe"></div>
+          </div>
+      </div>
+  </div>
+  <script type="module">
+    import  {} from "./src/main.js"
+  </script>
+  <!--replace with main.js-->
+</body>
+
+</html>
