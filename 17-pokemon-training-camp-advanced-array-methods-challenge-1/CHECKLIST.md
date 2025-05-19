@@ -1,0 +1,1 @@
+- The Pokémon training camp displayed as expected
