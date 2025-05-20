@@ -55,6 +55,8 @@ const postComment = async () => {
     'body': JSON.stringify(comment)
   })
 
+  console.log(comment)
+
   const data = await res.json()
 
   name.value = ''
