@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#app {
+  @apply flex justify-center items-center w-screen h-screen;
+}
+.container {
+  @apply bg-white p-6 rounded-lg shadow-lg w-96;
+}
+
+.title {
+  @apply text-2xl font-bold text-center mb-4 text-black;
+}
+
+.time {
+  @apply text-5xl font-mono text-center mb-6 text-black;
+}
+
+.btn-wrapper {
+  @apply flex justify-around;
+}
+
+.btn-wrapper button {
+  @apply text-white px-4 py-2 rounded;
+}
+
+.btn-wrapper .start {
+  @apply bg-green-500 hover:bg-green-600;
+}
+
+.btn-wrapper .pause {
+  @apply bg-yellow-500 hover:bg-yellow-600;
+}
+
+.btn-wrapper .reset {
+  @apply bg-red-500 hover:bg-red-600;
+}
