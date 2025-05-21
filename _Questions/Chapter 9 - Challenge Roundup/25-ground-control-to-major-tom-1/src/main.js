@@ -1,4 +1,4 @@
-import { logMessage, getRandomApiUrl } from '../utils/helpers'
+import { logMessage, getApiUrl } from '../utils/helpers'
 
 const setupConnectButton = () => {
   // Your code goes here
