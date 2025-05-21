@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #0B0C15;
+  --primary: #F041FF;
+  --secondary: #F7DF1F;
+  --text: white;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.top-nav{
+  @apply flex items-center py-6 text-sm flex-wrap justify-center p-2;
+}
+
+#nav li{
+  @apply px-4 whitespace-nowrap mb-7;
+}
+
+#nav a{
+  background: var(--primary);
+  @apply px-4 py-2 rounded;
+}
+
+#app{
+  @apply text-center mx-auto max-w-full;
+}
+
+.home-nav{
+  @apply flex flex-col justify-center list-none h-screen w-96 max-w-full mx-auto;
+}
+.home-nav li, .home-nav a{
+  @apply block text-center;
+}
+.exercise-title {
+  
+  @apply text-3xl font-bold mb-6 text-center;
+}
+
+.article-wrapper {
+  @apply flex justify-center flex-1;
+}
+
+.article-container {
+  @apply w-[400px];
+}
+
+.article-container ul {
+  @apply grid grid-cols-1 gap-6;
+}
+
+.article-container ul li {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+.article-container ul li h2 {
+  color: var(--bg);
+  @apply text-xl font-semibold mb-2;
+}
+
+.article-container ul li p {
+  @apply text-gray-700;
+}
+
+.score-container{
+  @apply text-3xl text-center p-8;
+}
+.add-function-wrapper{
+  @apply text-center;
+}
+
+.button {
+  @apply  text-white px-4 py-2 rounded bg-blue-500 transition-colors duration-300 ease-in-out;
+}
+
+.hovered {
+  @apply bg-blue-700;
+}
+
+.input {
+  @apply w-96 p-2 rounded border border-gray-300 text-black;
+}
+
+p {
+  @apply my-4 text-lg
+}
+
+.cart-item {
+  @apply flex justify-between w-96 p-2 border-b border-gray-300 mx-auto;
+}
+.cart-item:last-child {
+  @apply border-b-0;
+}
