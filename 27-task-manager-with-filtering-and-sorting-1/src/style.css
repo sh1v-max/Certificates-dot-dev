@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0B0C15;
+  --primary: #F041FF;
+  --secondary: #F7DF1F;
+  --text: white;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.top-nav {
+  @apply flex items-center py-6 text-sm flex-wrap justify-center p-2;
+}
+
+#nav li {
+  @apply px-4 whitespace-nowrap mb-7;
+}
+
+#nav a {
+  background: var(--primary);
+  @apply px-4 py-2 rounded;
+}
+
+#app {
+  @apply text-center mx-auto max-w-full;
+}
+
+.home-nav {
+  @apply flex flex-col justify-center list-none h-screen w-96 max-w-full mx-auto;
+}
+
+.home-nav li,
+.home-nav a {
+  @apply block text-center;
+}
+
+.exercise-title {
+  @apply text-3xl font-bold text-center my-10;
+}
+
+.article-wrapper {
+  @apply flex justify-center flex-1;
+}
+
+.article-container {
+  @apply w-[400px];
+}
+
+.article-container ul {
+  @apply grid grid-cols-1 gap-6;
+}
+
+.article-container ul li {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+.article-container ul li h2 {
+  color: var(--bg);
+  @apply text-xl font-semibold mb-2;
+}
+
+.article-container ul li p {
+  @apply text-gray-700;
+}
+
+.score-container {
+  @apply text-3xl text-center p-8;
+}
+
+.add-function-wrapper {
+  @apply text-center;
+}
+
+#task-input {
+  @apply px-4 py-2 rounded text-black;
+}
+
+#priority-select {
+  @apply px-4 py-2 rounded text-black ml-2;
+}
+
+#add-task-btn {
+  @apply px-4 py-2 rounded bg-green-500 text-white ml-2;
+}
+
+#task-list li {
+  @apply flex justify-between items-center p-4 mb-2 rounded-lg text-gray-800 gap-2;
+}
+
+#task-list li.priority-low {
+  background-color: #d1fad2; /* Green for low priority */
+}
+
+#task-list li.priority-medium {
+  background-color: #fef3c7; /* Yellow for medium priority */
+}
+
+#task-list li.priority-high {
+  background-color: #fecaca; /* Red for high priority */
+}
+
+#task-list li span {
+  @apply w-1/2 text-left
+}
+
+#task-list li .priority-label {
+  @apply px-2 py-1 rounded text-sm bg-gray-700 text-white max-w-20 text-center;
+}
+
+.delete-btn {
+  @apply px-2 py-1 rounded bg-red-500 text-white;
+}
+
+.filter-sort-wrapper {
+  @apply my-4;
+}
+
+.filter-sort-wrapper select {
+  @apply px-4 py-2 rounded text-black ml-2;
+}
